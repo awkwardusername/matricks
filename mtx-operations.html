@@ -7,7 +7,7 @@
 <body data-ng-app="matrix.operate" data-ng-controller="MainCtrl as ctrl">
 
 <h1>Operate on Matrices!</h1>
-
+<p>Input integers separated by a space. A row is separated by a newline. Operates only on integers. Matrices are always valid because empty values are replaced with the value, 0.</p>
 <form>
   <div class="matrixContainer matrixContainer-bracket">
     <textarea data-ng-model="ctrl.matrix1.rawData" data-ng-change="ctrl.clearOutput(); ctrl.parseMatrix();" data-ng-list="&#10;" data-ng-trim="false" style="width: 250px; height: 250px;"></textarea>
