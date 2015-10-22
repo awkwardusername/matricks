@@ -138,8 +138,7 @@
 
                 for(i = 0; i < _size; i++) {
                     for(j = 0; j < _size; j++) {
-                        if(i < j && matrix[i][j] !== 0 ||
-                            i >= j && matrix[i][j] === 0) {
+                        if(i < j && matrix[i][j] !== 0) {
                             return false;
                         }
                     }
@@ -157,8 +156,7 @@
 
                 for(i = 0; i < _size; i++) {
                     for(j = 0; j < _size; j++) {
-                        if(i > j && matrix[i][j] !== 0 ||
-                            i <= j && matrix[i][j] === 0) {
+                        if(i > j && matrix[i][j] !== 0) {
                             return false;
                         }
                     }
@@ -176,7 +174,7 @@
 
                 for(i = 0; i < _size; i++) {
                     for(j = 0; j < _size; j++) {
-                        if(i === j && matrix[i][j] !== matrix[j][i]) {
+                        if(matrix[i][j] !== matrix[j][i]) {
                             return false;
                         }
                     }
